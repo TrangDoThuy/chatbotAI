@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% block body %}
+<div class="abs center overlay">
+  <!-- <div class="content">
+    <table>
+      <tr>
+        <th>Username</th>
+        <th>Message</th>
+        <th>Time</th>
+      </tr>
+      {% for message in messages %}
+      <tr>
+        <th>{{message.user_name}}</th>
+        <th>{{message.content}}</th>
+        <th>{{message.time_created}}</th>
+      </tr>
+      {% endfor %}
+    </table>
+  </div> -->
+  <center>
+    <form action="/" method="POST">
+      <input
+        style="width: 40%; height: 50px"
+        type="text"
+        name="chat"
+        id="chatbox"
+        placeholder="Hi there! Type here to talk to me."
+      />
+      <button id="rec" style="height: 55px; width: 7%" type="submit">
+        send
+      </button>
+    </form>
+  </center>
+</div>
+
+{% endblock %}
